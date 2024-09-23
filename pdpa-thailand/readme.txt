@@ -1,0 +1,166 @@
+=== Designil PDPA Thailand ===
+Contributors: aumkub
+Donate link: https://www.paypal.me/watcharapon/0usd
+Tags: pdpa, thai, thailand, gdpr, cookie, consent, law
+Tested up to: 6.4.1
+Stable tag: 1.2.6
+License: GPLv2 or later
+License URI: https://www.designilpdpa.com
+
+Popup สำหรับขอ Consent ที่รองรับความต้องการของ PDPA มีระบบจัดการคุกกี้อย่างเป็นระบบ และสามารถขอความยินยอมจากผู้ใช้ก่อนที่จะเก็บข้อมูล
+
+== Description ==
+**Designil PDPA Thailand: All-in-one solution for PDPA Consent Popup on WordPress**
+
+Designil PDPA Thailand's mission is to provide the reliable and affordable PDPA cookie consent solution for WordPress website owners in Thailand and around the world.
+
+Designil PDPA Thailand Free contains everything that you need to manage your cookies consent for PDPA, and Designil PDPA Thailand Pro (Designil PDPA) open up a lot of premium features and extremely flexible customizations.
+
+Designil PDPA Thailand is developed and maintained by Designil Code. We have more than 10 years experience in building websites with WordPress, developing WordPress plugins and WordPress themes.
+
+Designil PDPA Thailand คือ ปลั๊กอินสำหรับทำให้เว็บไซต์ WordPress ของคุณรองรับ PDPA ง่าย ๆ
+
+จุดมุ่งหมายของ Designil PDPA Thailand คือ เราอยากสร้างปลั๊กอินสำหรับทำ Cookie Consent ตามกฏหมาย PDPA ที่ใช้งานง่าย และเชื่อถือได้ สำหรับเจ้าของเว็บไซต์ทั้งในไทยและต่างประเทศที่ต้องเก็บข้อมูลลูกค้าคนไทย
+
+Designil PDPA Thailand เวอร์ชั่นฟรี มีทุกฟีเจอร์ที่จำเป็นต่อการจัดการ Cookie Consent ตามกฏหมาย และยังสามารถปรับแต่งหน้าตาเพิ่มความสวยงามได้ นอกจากนั้น ยังมี Designil PDPA Thailand Pro (หรือ Designil PDPA) ที่จะทำให้ระบบ Cookie Consent ของคุณมีฟีเจอร์มากกว่าเดิม
+
+Designil PDPA Thailand พัฒนาโดย Designil Code ผู้เชี่ยวชาญด้าน WordPress ที่มีประสบการณ์กว่า 10 ปี ในการพัฒนาปลั๊กอินและธีมสำหรับเว็บไซต์ WordPress 
+
+## ทำเว็บไซต์ของคุณให้รองรับ PDPA ใน 3 นาที
+Designil PDPA Thailand ถูกออกแบบมาให้ครอบคลุมตามพระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562 ของประเทศไทย (Thailand's Personal Data Protection Act - PDPA) ซึ่งเป็นฉบับล่าสุด
+
+เราออกแบบออกมาให้ใช้งานได้ง่าย สามารถติดตั้งปลั๊กอินเพื่อเริ่มใช้งานได้ทันที
+
+**[พิเศษ]** เราสร้างเทมเพลต Privacy Policy ให้อัตโนมัติ สามารถนำมาใช้ หรือแก้ไขให้ตรงตามข้อมูลของเว็บไซต์คุณได้แบบง่าย ๆ (อ้างอิงจาก Thailand Data Protection Guidelines 3.0 ของคณะนิติศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย)
+
+## ฟีเจอร์ของ Designil PDPA Thailand
+ฟีเจอร์ต่าง ๆ ของ Designil PDPA Thailand จะช่วยให้เว็บไซต์ WordPress ของคุณรองรับ PDPA แบบง่าย ๆ ฟีเจอร์เด่น ๆ ของเรามีดังนี้:
+
+- **ถูกต้องตามหลัก PDPA**: ปลั๊กอินนี้ไม่มีการเก็บข้อมูลส่วนตัวของลูกค้าโดยพลการ ลูกค้าต้องกดยินยอมก่อนเท่านั้น
+- **ปรับแต่งหน้าตาได้**: สามารถเลือกสีที่ต้องการสำหรับหน้าตา Cookie Consent Popup บนหน้าเว็บไซต์ได้
+- **โหลดเร็ว ขนาดไฟล์เล็ก**: เราไม่ใช้ jQuery ทำให้มั่นใจได้ว่าไฟล์ปลั๊กอินมีขนาดเล็ก โหลดเร็ว ไม่หนักเว็บไซต์ของคุณ
+- **ระบบจัดการคุกกี้ที่ใช้งานง่าย**: จัดกลุ่มและตั้งชื่อคุกกี้ เพื่ออธิบายสคริปต์บนเว็บไซต์ได้ตามกฏหมาย PDPA โดยรองรับการใช้งานกับ Google Analytics และ Facebook Pixel (อาจมีการเพิ่มเติมในอนาคต สามารถส่งไอเดียของคุณได้ที่ Facebook Page: Designil Code)
+- **รองรับการทำงานกับทุกธีม WordPress**: ไม่ว่าคุณจะใช้ธีมอะไร ก็สามารถติดตั้ง Designil PDPA Thailand แล้วใช้งานได้ทันที
+- สามารถรีเซ็ทการยินยอมจากหลังบ้านได้เลย เพื่อให้ Popup ขึ้นมาถามผู้ใช้ทั้งเก่าและใหม่โดยอัตโนมัติ
+- ปรับแต่งข้อความใน Popup ได้ตามต้องการ
+
+## เพิ่มฟีเจอร์เด็ด ๆ มากขึ้น ด้วย Designil PDPA Thailand Pro
+ปลั๊กอิน Designil PDPA Thailand Pro จะทำให้ Cookie Consent Popup ของคุณมีฟีเจอร์ที่ดียิ่งขึ้นไปอีก ฟีเจอร์ที่ลูกค้าของเราชอบ เช่น
+- **[PRO] 100% free for unlimited pageview**: ไม่จำกัดจำนวนคน เพื่อเข้าใช้งาน ไม่ตัดหรือหยุดการทำงานเมื่อครบถึงจำนวนคนที่กำหนด
+- **[PRO] ใส่สคริปต์ได้อย่างอิสระถึง 3 จุด**: สคริปต์สำหรับเก็บข้อมูลส่วนบุคคล อาจมีความจำเป็นที่ต้องวางไว้ในหลากหลายตำแหน่ง คุณสามารถเลือกใส่สคริปต์บน <head>, หลัง <body>, หรือก่อน </body> ก็ได้ (หรือใส่ทุกจุดก็ยังได้)
+- **[PRO] กำหนดเวลาหมดอายุคุกกี้เองได้**: คุณสามรถกำหนดเงื่อนไขเวลาของ Cookie ให้หมดอายุอัตโนมัติเองได้ ใน X วัน
+- **[PRO] ระบบ Cache Proof**: ใช้คู่กับปลั๊กอินแคชได้ ไม่มีปัญหา
+- **[PRO] ระบบ Designil Dynamic Caching**: สร้างไฟล์ CSS และ JS ใหม่ออกมาอัตโนมัติ ให้รองรับกับระบบ CDN ต่าง ๆ ที่คุณใช้
+- **[PRO] ปรับแต่งได้ 100%**: ตกแต่งหน้าตาให้เหมาะกับแบรนด์ของคุณได้ตามต้องการ สามารถปรับความกว้าง Container และเลือกสีได้อย่างอิสระ
+- **[PRO] Light Mode & Dark Mode**: เลือกปรับ Light Mode (พื้นหลังสีขาว) และ Dark Mode (พื้นหลังสีดำ) ให้เข้ากับเว็บไซต์ของคุณได้
+- **[PRO] Cookie Scanner**: ระบบช่วยตรวจหาว่ามีการใช้คุกกี้อะไรในเว็บบ้าง เพื่อนำมาเขียน Privacy Policy ได้อย่างถูกต้อง
+- **[PRO] เพิ่มกลุ่มคุกกี้ได้ไม่จำกัด**: สามารถเพิ่มกลุ่มคุกกี้เพื่อเก็บข้อมูลส่วนตัวกลุ่มที่แตกต่างกันได้ เช่น คุกกี้เพื่อทำ Marketing, คุกกี้เพื่อวิเคราะห์ข้อมูล ฯลฯ เพื่อให้ผู้ใช้เว็บไซต์สามารถเลือกยินยอมคุกกี้ในแต่ละกลุ่มแยกจากกันได้
+- **[PRO] Developer - ระบบ Override Template**: สำหรับโปรแกรมเมอร์ที่ต้องการปรับแต่งหน้าตา Popup ด้วยตนเอง สามารถเขียนไฟล์เข้ามาใช้แทนได้ทันที
+- **[PRO] Advanced Consent Log Management**: เก็บข้อมูลทุกครั้งที่มีการยินยอม / ไม่ยินยอม ทำให้แอดมินเว็บ หรือทีม IT ของบริษัท สามารถเข้ามาตรวจเช็คได้ตลอด และฟีเจอร์อีกมากมาย เช่น สามารถ export มาเป็น CSV, ระบบ filter ด้วยวันและเวลา, กำหนดจำนวนวันสูงสุดที่จะเก็บ, กำหนดให้เก็บเฉพาะคนที่ยอมรับ,​ ระบบ clear log เป็นต้น
+- **[PRO] เพิ่มฟีเจอร์ Reqeust form ( ระบบร้องเรียน )**: User มีสิทธิ์เพิกถอนความยินยอมที่เคยให้ไปแล้ว Designil PDPA มีระบบฟอร์มเพียงแค่ติดตั้ง shortcode ก็สามารถใช้งานได้ทันที และฟีเจอร์อีกมากมาย เช่น มีระบบรักษาความปลอดภัยของไฟล์ยืนยันตัวตน ของ user ที่อัพโหลดมา, สามารถกำหนด ให้ร้องเรียนได้แค่ user ที่ login ได้, มีระบบแจ้งเตือนเมื่อมีการอัพเดทสถานะ ของการร้องเรียน และเตือนถึงผู้ดูแล, มีระบบแจ้งเตือนแบบรายวัน เมื่อวันที่ครบกำหนดใกล้เข้ามา, สามารถกำหนดอีเมลที่แจ้งเตือนเองได้ และกำหนดวันที่ครบกำหนด ( ตามกฎหมายต้องทำเสร็จภายใน 30 วัน ),​ สามารถกำหนดขนาดไฟล์ที่ใช้แจ้งยืนยันตน เป็นต้น
+- **[PRO] ใหม่ล่าสุด ! ระบบธีม มีให้เลือกถึง 14 แบบ**
+
+
+สำหรับลิสต์ฟีเจอร์ทั้งหมดของ Designil PDPA Thailand Pro สามารถเยี่ยมชมได้ที่ [เว็บไซต์ Designil PDPA Thailand Pro](https://www.designilpdpa.com)
+
+## แจ้งปัญหาการใช้งาน - BUG REPORTS
+หากคุณพบปัญหาในการใช้งานปลั๊กอินนี้ สามารถแจ้งปัญหาได้ทางระบบ Ticket บน หน้าเว็บไซต์ [Designil PDPA Thailand Pro](https://www.designilpdpa.com) หรือทาง Inbox [เพจ Facebook: Designil Code](https://fb.com/designilcode)
+
+Do you want to report a bug for Designil PDPA Thailand? Please feel free to contact us on the ticket system on [our website](https://www.designilpdpa.com), or send us a message on [our Facebook page](https://fb.com/designilcode)
+
+## ปลั๊กอิน Designil PDPA Thailand เหมาะกับใคร
+ทุกคนที่ต้องการทำให้เว็บไซต์ WordPress ของคุณ รองรับกฏหมาย PDPA แบบง่าย ๆ อาทิ
+
+- เจ้าของเว็บไซต์ WordPress ในประเทศไทย หรือต่างประเทศที่ต้องการก็บข้อมูลส่วนตัวจากลูกค้าในประเทศไทย (ตามกฏหมาย PDPA)
+- Digital Marketer ที่ต้องการเก็บข้อมูลส่วนตัวของผู้ใช้งาน
+- IT Officer ที่ต้องการเก็บข้อมูลให้ถูกต้องตามกฏหมาย PDPA
+
+== Installation ==
+
+1. Add new plugin: ไปยังเมนู Plugins > Add New
+2. Upload this plugin: ด้านบนจะพบคำว่า “Add Plugins” ถัดไปด้านขวามีปุ่ม “Upload Plugin” ให้คลิกเพื่อเข้าไป
+3. Install this plugin: เมื่อเข้ามายังหน้าแล้วให้เลือก “Choose File” จากนั้นอัพโหลด zip file ที่ได้จากทางเราหลังจากนั้นคลิกปุ่ม “Install Now”
+
+== Frequently Asked Questions ==
+
+= หากไม่ทำตามกฏหมาย PDPA มีค่าปรับอย่างไรบ้าง? =
+
+ค่าปรับสูงสุด 5 ล้านบาท และจำคุกไม่เกิน 1 ปี
+
+= ปลั๊กอินนี้มีการเก็บความยินยอมจากผู้เข้าชมไว้ที่ไหน ? =
+
+เมื่อ user กดยอมรับหรือปฏิเสธ ระบบจะทำการเก็บเข้าคุกกี้ โดยระยะเวลาขึ้นอยู่กับการตั้งค่าที่ระบบหลังบ้าน (เจ้าของเว็บไซต์สามารถปรับแต่งได้ 100%)
+
+= ปลั๊กอิน Designil PDPA Thailand แตกต่างจากปลั๊กอินขอความยินยอมคุกกี้ทั่วไปอย่างไร? =
+
+เรามีการรันสคริปต์ในการเก็บข้อมูลส่วนตัวก็ต่อเมื่อผู้ใช้เว็บยินยอมแล้วเท่านั้น ทำให้มั่นใจได้ว่าคุณจะเก็บข้อมูลถูกต้องตามหลักตามพระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562 ของประเทศไทย (Thailand's Personal Data Protection Act - PDPA)
+
+นอกจากนั้น เราพัฒนาระบบพิเศษ Designil Dynamic Caching ที่จะสร้างไฟล์ CSS และ JS ใหม่ออกมาอัตโนมัติ ให้รองรับกับปลั๊ํกอินแคช และระบบ CDN ต่าง ๆ ที่เว็บไซต์ลูกค้าใช้
+
+= Cookie Scanner คืออะไร =
+
+Cookie Scanner เป็นเครื่องมือที่ช่วยค้นหาคุกกี้ในเว็บไซต์ของคุณ ทำให้คุณทราบเบื้องต้นว่าคุกกี้มีอะไรบ้าง เพื่อนำไปเขียนนโยบายความเป็นส่วนตัวได้ง่ายขึ้น
+
+(ฟีเจอร์นี้จะอยู่ในปลั๊กอิน Designil PDPA Pro)
+
+= ปลั๊กอินนี้มี Privacy Policy (ข้อตกลงความเป็นส่วนตัว) ให้หรือไม่ =
+
+เรามีเทมเพลต Privacy Policy (ข้อตกลงความเป็นส่วนตัว) และ Cookie Policy (ข้อตกลงการใช้คุกกี้) พื้นฐานให้ ซึ่งแนะนำให้เจ้าของเว็บไซต์นำไปปรับปรุงต่อให้เหมาะสมกับเว็บไซต์ของตนเอง
+
+= หากมีคำถามหรือข้อสงสัยเพิ่มเติม สอบถามได้ที่ไหน ? =
+
+หากมีคำถามเพิ่มเติม สอบถามเราได้ทาง Inbox Facebook Page ของเรา https://fb.com/designilcode เลยครับ
+
+== Screenshots ==
+1. รูปแบบ Popup
+2. รูปแบบ Sidebar - Cookie settings
+3. Tab settings - General
+4. Tab settings - Messages
+5. Tab settings - Cookies
+6. Tab settings - Appearance
+
+== Changelog ==
+= 1.2.6 =
+* รองรับการทำงาน WordPress 6.4.3
+* ปรับปรุงโลโก้หลังบ้าน
+* ตรวจสอบ code tracking Gogole Analytic, Facebook Pixel
+
+= 1.2.5 =
+* รองรับการทำงาน WordPress 6.4.1
+
+= 1.2.4 =
+* รองรับการทำงาน WordPress 6.2.2
+
+= 1.2.3 =
+* แก้ไขบั๊กเล็กน้อย
+
+= 1.2.2 =
+* ปรับ UI หลังบ้าน
+* แก้ไขบั๊กเล็กน้อย
+* รองรับการทำงาน WordPress 6.0
+
+= 1.2.1 =
+* ปรับ UI หลังบ้าน
+* รองรับการทำงาน WordPress 5.9.3
+
+= 1.2 =
+* แก้ปัญหาปุ่มปิด แล้วยังโหลด Code
+* จัดลำดับ z-index ของ popup
+
+= 1.1 =
+* แทรก Script Google Analytic
+* แทรก Script Facebook Pixel
+* ปรับ Style + Script ให้บันทึกลง Temp เพื่อแสดงใน Inline
+
+= 1.0 =
+* ระบบจัดการ Cookie และแยกประเภท script ได้เองจากหลังบ้าน
+* Inject script ในการเก็บข้อมูล เมือมีการกดยินยอมจากผู้ใช้เท่านั้น
+* สามารถรีเซ็ทการยินยอมจากหลังบ้านได้เลย เพื่อให้ Popup ขึ้นมาถามทุก User โดยอัตโนมัติ
+* ปรับแต่งข้อความใน Popup ได้ตามต้องการ
+* ปรับแต่งรูปแบบ สี / ตำแหน่ง / การแสดงผลของ Popup ได้
+* Cache Proof ใช้คู่กับปลั๊กอินแคชได้ ไม่มีปัญหา
+* ระบบ Designil Dynamic Caching ปลั๊กอินจะ generate ไฟล์ CSS JS เพื่อการโหลดในครั้งถัดไป
+* ระบบ Cookie scanner ตรวจหาได้ว่าในเว็บมีใช้ Cookie อะไรอยู่บ้าง
+
+== Upgrade Notice ==
+* 

@@ -1,0 +1,630 @@
+@import 'plugins/magnific-popup';
+
+.toplevel_page_pdpa-thailand > div.wp-menu-image:before {    
+    background: url("data:image/svg+xml,%3Csvg width='82' height='89' viewBox='0 0 82 89' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M52.63 14C52.55 13.64 52.44 13.29 52.34 12.93C52.24 12.57 52.22 12.44 52.15 12.2C50.809 10.023 49.1392 8.06649 47.2 6.4C43.8643 3.50171 39.8134 1.54936 35.4681 0.745724C31.1229 -0.0579131 26.6417 0.316474 22.49 1.83C25.8206 2.42654 28.9657 3.79331 31.6742 5.82125C34.3827 7.84918 36.5798 10.4821 38.09 13.51L38 13.44C37.59 13.04 37.18 12.67 36.77 12.3C32.3725 8.51835 26.7649 6.43878 20.965 6.43878C15.1651 6.43878 9.55747 8.51835 5.16 12.3C4.84 12.57 4.54 12.87 4.25 13.16C3.96 13.45 3.45 13.97 3.05 14.39C2.83 14.63 2.6 14.87 2.39 15.13C1.56 16 0.77 17 0 18C4.39771 16.1012 9.22643 15.4247 13.9766 16.0419C18.7268 16.6591 23.2224 18.547 26.9888 21.5066C30.7553 24.4661 33.6531 28.3874 35.3764 32.8568C37.0997 37.3262 37.5846 42.1779 36.78 46.9C36.78 47.01 36.72 47.12 36.7 47.23C37.48 46.85 38.25 46.43 39 45.97C43.151 43.4535 46.6222 39.9583 49.11 35.79C49.2 35.63 49.28 35.47 49.37 35.32C53.0429 28.8565 54.2036 21.2657 52.63 14Z' fill='%23FF9400'/%3E%3Cpath d='M71.83 15.74C72.46 16.53 73.05 17.34 73.61 18.17C77.3796 23.756 79.508 30.2868 79.7537 37.0212C79.9994 43.7557 78.3525 50.4242 75 56.27C71.3006 62.0939 65.8998 66.6395 59.5299 69.2905C53.16 71.9415 46.129 72.5697 39.39 71.09C37.7347 70.7255 36.1099 70.2341 34.53 69.62C35.5295 70.8662 36.7415 71.9259 38.11 72.75C39.4614 73.5517 40.9444 74.107 42.49 74.39H41.87C41.0633 74.35 40.2533 74.28 39.44 74.18H39.33C37.7656 73.9893 36.2156 73.6953 34.69 73.3L34.45 73.23C33.72 73.04 33 72.83 32.28 72.59H32.22C31.45 72.32 30.68 72.04 29.92 71.72C29.21 71.42 28.5 71.1 27.8 70.72L27.38 70.52C26.67 70.15 25.96 69.77 25.27 69.36C24.58 68.95 23.98 68.56 23.35 68.13L23.19 68L23 67.89C22.48 67.53 22 67.15 21.47 66.76H21.4C17.1644 63.4035 13.7368 59.1385 11.37 54.28C11.02 53.57 10.7 52.85 10.37 52.12L10.13 51.51C9.90001 50.92 9.69001 50.34 9.50001 49.75C9.44001 49.57 9.37001 49.39 9.32001 49.21C9.09001 48.5 8.88001 47.77 8.70001 47.05L8.58001 46.61C8.58001 46.61 7.89001 48.31 7.73001 48.76C6.47686 52.1337 6.09481 55.769 6.61919 59.3295C7.14356 62.89 8.55744 66.2608 10.73 69.13C11.9068 70.6868 13.2933 72.0732 14.85 73.25C12.37 74.32 9.60827 74.5504 6.98529 73.9059C4.3623 73.2614 2.02176 71.7775 0.320007 69.68C3.76287 74.6335 8.17025 78.8409 13.2781 82.0504C18.3859 85.2598 24.089 87.405 30.0457 88.3577C36.0025 89.3103 42.0902 89.0506 47.9442 87.5942C53.7982 86.1378 59.2979 83.5147 64.1139 79.882C68.9298 76.2493 72.9629 71.6818 75.9715 66.4532C78.9801 61.2246 80.9022 55.4424 81.6227 49.4532C82.3432 43.4639 81.8472 37.3909 80.1645 31.5979C78.4818 25.8049 75.647 20.4112 71.83 15.74Z' fill='%23FF3500'/%3E%3Cpath d='M73.61 18.17C73.05 17.34 72.46 16.53 71.83 15.74C71.38 15.19 70.91 14.65 70.44 14.11C63.8419 6.78268 55.0198 1.8253 45.33 0C46.0575 0.788372 46.7451 1.61274 47.39 2.47C47.93 3.19 48.39 3.94 48.89 4.7C50.3068 7.03249 51.4033 9.54504 52.15 12.17C52.22 12.41 52.28 12.66 52.34 12.9C52.4 13.14 52.55 13.61 52.63 13.97C54.2113 21.2452 53.0503 28.8482 49.37 35.32C49.28 35.47 49.2 35.63 49.11 35.79C46.9318 39.4575 43.9924 42.6151 40.49 45.05C40 45.39 39.49 45.71 39 46.05C38.25 46.51 37.48 46.93 36.7 47.31L36.53 47.41C34.8439 48.2337 33.0868 48.9031 31.28 49.41C23.648 51.493 15.5025 50.4833 8.61 46.6L8.73 47.04C8.91 47.76 9.12 48.49 9.35 49.2C9.4 49.38 9.47 49.56 9.53 49.74C9.72 50.33 9.93 50.91 10.16 51.5L10.4 52.11C10.7 52.84 11.02 53.56 11.4 54.27C12.1804 55.8568 13.0761 57.3842 14.08 58.84C14.58 59.58 15.08 60.29 15.68 60.99C17.3876 63.1094 19.33 65.0283 21.47 66.71H21.54C22.04 67.1 22.54 67.48 23.07 67.84L23.22 67.95L23.38 68.07C24.01 68.5 24.64 68.91 25.3 69.3C25.96 69.69 26.7 70.09 27.41 70.46L27.83 70.66C28.53 71.01 29.24 71.33 29.95 71.66C30.71 71.98 31.48 72.26 32.25 72.53H32.31C33.03 72.77 33.75 72.98 34.48 73.17L34.72 73.24C36.2456 73.6353 37.7956 73.9293 39.36 74.12H39.47C40.2833 74.22 41.0933 74.29 41.9 74.33H42.52C41.3722 74.1166 40.2564 73.757 39.2 73.26C38.84 73.08 38.49 72.9 38.14 72.69C36.7715 71.8659 35.5595 70.8062 34.56 69.56C36.1398 70.1741 37.7647 70.6655 39.42 71.03C40.04 71.17 40.65 71.28 41.27 71.38C46.213 72.1848 51.2733 71.8771 56.0825 70.4794C60.8916 69.0816 65.3284 66.629 69.07 63.3C69.68 62.75 70.28 62.17 70.85 61.57C72.4075 59.9469 73.7978 58.1713 75 56.27C78.3525 50.4242 79.9994 43.7557 79.7537 37.0212C79.508 30.2868 77.3796 23.756 73.61 18.17Z' fill='%23FC7E05'/%3E%3C/svg%3E%0A") no-repeat center center;
+    background-size: contain;
+    width: 16px;
+    height: 20px;
+    content: '';
+}
+
+.small-text,
+.regular-text,
+.large-text {
+    padding: 7px 10px;
+}
+
+.refresh--cookie {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    img {
+        height: 14px;
+    }    
+}
+
+.color--picker {
+    width: 70px;
+    height: 30px;
+    border-radius: 0px !important;
+    // background: transparent !important;
+    padding: 0px 2px !important;
+    margin: 0 !important;
+    border: 0 !important;
+    outline: none !important;
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.2) !important;
+}
+
+.nav-tab-wrapper {
+    margin-bottom: 20px;
+}
+
+/* The switch - the box around the slider */
+.dpdpa--form-group{
+    &.switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        margin-right: 1em;   
+        
+        input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+    }
+
+    /* Hide default HTML checkbox */
+
+    /* The slider */
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+        border: 2px solid #fff;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 22px;
+        width: 22px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked + .slider {
+        background-color: #007CBA;
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px #007CBA;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+}
+
+/* Edit */
+.policy--page-edit {
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    margin-left: 10px;
+
+    img {
+        width: 17px;
+    }
+}
+
+.form-table td fieldset label.switch--label {
+    padding-left: 10px;
+}
+
+.pdpa--force {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	margin: 10px 25px 20px;
+	padding: 20px 20px;
+	border-radius: 3px;
+
+    input {
+        height: 40px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+}
+
+.form-group {
+    .description {
+        font-size: 13px;
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+    }
+
+    .loading {
+        background-color: #fff;
+        color: #888;
+    }
+}
+
+/* PPDA settings list */
+.pdpa--list-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 0;
+    padding: 20px 20px;
+    border-radius: 3px;
+}
+
+.pdpa--list {    
+
+    li {
+        position: relative;
+        margin-bottom: 20px;
+        margin-left: 25px;
+        margin-right: 25px;
+        background-color: #fff;        
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -30px;
+            transform: translate(0, -50%);
+            width: 14px;
+            height: 14px;
+            background: url('data:image/svg+xml;utf8,<svg enable-background="new 0 0 479.71 479.71" version="1.1" viewBox="0 0 479.71 479.71" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m469.94 328.85c-0.96-0.927-1.977-1.792-3.045-2.592-13.381-8.971-31.276-7.013-42.4 4.64l-10.08 10.08c-3.469 3.481-6.383 7.474-8.64 11.84l-6.24 12v-298.24c0.634-16.247-10.62-30.552-26.56-33.76-17.486-2.564-33.74 9.534-36.303 27.02-0.242 1.649-0.354 3.314-0.337 4.98v299.52l-4.32-9.44c-2.335-5.046-5.529-9.648-9.44-13.6l-10.56-10.56c-11.124-11.653-29.019-13.611-42.4-4.64-14.259 10.441-17.355 30.464-6.914 44.724 0.844 1.152 1.764 2.247 2.754 3.276l80 80c12.49 12.504 32.751 12.515 45.255 0.025l80.025-80.025c12.275-12.715 11.919-32.973-0.795-45.248z"/><path d="m214.41 104.66-78.88-79.04c-12.49-12.504-32.751-12.515-45.255-0.025l-80.025 80.025c-11.653 11.124-13.611 29.019-4.64 42.4 10.441 14.259 30.464 17.355 44.724 6.914 1.152-0.844 2.247-1.764 3.276-2.754l10.88-10.88c5.215-5.219 9.158-11.57 11.52-18.56l4.32-9.92v302.24c-0.607 16.347 10.812 30.689 26.88 33.76 17.445 2.829 33.881-9.019 36.71-26.465 0.297-1.83 0.434-3.682 0.41-5.535v-304l3.2 9.12c2.403 6.746 6.284 12.869 11.36 17.92l11.52 11.52c12.492 12.501 32.753 12.509 45.255 0.017 0.621-0.621 1.217-1.267 1.785-1.937 10.732-13.471 9.413-32.903-3.04-44.8z"/></svg>') no-repeat 0 0;
+        }
+
+        &.active {
+            .pdpa--list-body {
+                display: block;
+            }
+
+            .form-group--action svg {
+                transform:rotate(180deg);
+            }
+        }
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .ui-sortable-placeholder {
+        visibility: visible !important;
+        background-color: rgba(248, 248, 248, 0.74) !important;
+        border: 2px dotted #DDD;
+    }
+}
+
+.pdpa--delete-button {
+    position: absolute;
+    top: 50%;
+    right: -27px;
+    transform: translate(0, -50%);
+    background: transparent;    
+    border-radius: 2em;
+    color: #f00;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;    
+    line-height: 2px;
+    margin: 0 0 8px;
+    padding: 0;        
+    text-decoration: none;
+
+    svg {
+        height: 11px;
+        width: 11px;
+    }
+
+    &:hover {
+        color: #f00;
+    }
+}
+
+.pdpa--info, 
+.pdpa--link {
+    &:before {
+        display: inline-block;
+        content: '';
+        position: relative;
+        top: 2px;
+        margin-left: 2px;
+        width: 14px;
+        height: 14px;
+        background: url('data:image/svg+xml;utf8,<svg enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m256 0c-141.49 0-256 114.5-256 256 0 141.49 114.5 256 256 256 141.49 0 256-114.5 256-256 0-141.49-114.5-256-256-256zm0 476.28c-121.46 0-220.28-98.817-220.28-220.28s98.817-220.28 220.28-220.28 220.28 98.817 220.28 220.28-98.817 220.28-220.28 220.28z"/><path d="m256 203.61c-9.864 0-17.86 7.997-17.86 17.86v146.46c0 9.864 7.997 17.86 17.86 17.86s17.86-7.997 17.86-17.86v-146.46c0-9.864-7.996-17.861-17.86-17.861z"/><path d="m256 126.21c-9.864 0-17.86 7.997-17.86 17.86v21.433c0 9.864 7.997 17.86 17.86 17.86s17.86-7.997 17.86-17.86v-21.433c0-9.863-7.996-17.86-17.86-17.86z"/></svg>') no-repeat 0 0;
+    }
+}
+
+.pdpa--list-inner {
+    border: 1px solid #ddd;    
+    border-radius: 3px;
+
+    .form-group {
+        margin-bottom: 1em;
+    }
+
+    input {
+        height: 40px;
+        width: 100%;
+        font-size: 13px;
+        border: 1px solid #ccc;
+    }
+
+    textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 12px;
+        border: 1px solid #ccc;
+    }
+
+    input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+
+        &:before {
+            position: relative;
+            top: 2px;
+            left: 2px;
+        }
+    }
+
+    .error {
+        border-color: #f00;
+
+        &:focus {
+            border-color: #f00;
+        }
+    }
+}
+
+.pdpa--list-col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    flex-wrap: wrap;
+
+    &.col-2 > div {             
+        width: 49.3%;
+    }
+
+    &.col-3 > div {             
+        width: 32.2%;
+    }
+}
+
+.pdpa--list-head {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    padding: 5px 15px 5px 7px;
+
+    > div {
+        flex-grow: 1;
+    }
+
+    .form-group {
+        margin-bottom: 0;
+        padding-right: 1em;
+    }
+
+    .form-group--action {
+        flex: 0 0 30px;
+
+        a {
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;            
+        }
+
+        svg {
+            transition: 0.2s all;
+        }
+    }
+
+    input {
+        border: none;
+        border-radius: 0px;
+
+        &.error::placeholder {            
+            color: #f00;
+        }
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+
+.pdpa--list-body {
+    display: none;
+    padding: 15px 15px 5px;    
+}
+
+.pdpa--button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pdpa--label-error {
+    font-size: 13px;
+    margin-top: 5px;
+    color: #f00;
+}
+
+.pdpa--li_template {
+    display: none;
+}
+
+.pdpa--right {
+    position: relative;
+    top: -15px;
+    float: right;
+}
+
+/* Popup */
+.white_popup {
+    display: none;
+
+    b {
+        display: block;
+        margin-bottom: 7px;
+    }
+
+    hr {
+        margin: 15px 0;
+    }
+}
+
+.appearance--info {
+    width: 100%;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.mfp-content {
+    .white_popup {
+        display: block;
+    }
+}
+/* License */
+.license--status {
+    display: block;
+    margin: 0.4em 0 1em;
+}
+
+/* Scanner */
+.pdpa--cookie-list {
+    display: inline-block;
+    background-color: #fff;
+    padding: 0.5em 1.5em 1em;
+    margin-top: 0em;
+    border-radius: 5px;
+    overflow: auto;
+    position: relative;
+
+    a {
+        position: relative;
+        top: 2px;
+        text-decoration: none;
+    }
+
+    img {
+        width: 12px;
+        margin-right: 10px;        
+    }
+
+    th {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ddd
+    }
+
+    td {
+        padding-top: 10px;
+    }
+}
+
+/* Advanced */
+.pdpa--advanced {
+    .default {
+        font-weight: bold;
+        color: #00669b;
+    }
+
+    .override {         
+        font-weight: bold;
+        color: #429900;
+    }
+}
+
+/* Help */
+.dpdpa--quicklink {
+    position: fixed;
+    bottom: 3em;
+    right: 1.5em;
+
+    &.active {
+        .dpdpa--quicklink-button {
+            transform: scale(1.2);
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+            
+            img {
+                opacity: 1;
+                transform: rotate(360deg);
+            }
+        }   
+
+        .dpdpa--quicklink-list a {
+            visibility: visible;
+            opacity: 1;
+            // transform: scale(1);
+        }
+
+        .dpdpa--quicklink-list {
+            visibility: visible;
+            bottom: 55px;
+        }
+    } 
+}
+
+.dpdpa--quicklink-button {
+    display: flex;
+    background-color: #fff;
+    border-radius: 30px;
+    width: 45px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    transition: 0.2s all;
+
+    &:hover {
+        transform: scale(1.2);
+
+        img {
+            opacity: 0.7;
+            transform: rotate(360deg);
+        }
+    }
+
+    img {
+        width: 30px; 
+        height: 30px;
+        transition: 0.2s all;
+    }    
+}
+
+.dpdpa--quicklink-list {
+    visibility: hidden;
+    position: absolute;
+    bottom: 75px;
+    right: 0;
+    transition: 0.2s all;
+
+    li {
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+
+    a {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        text-decoration: none;
+        // transform: scale(0);
+        opacity: 0;
+        transition: 0.2s all;
+
+        &:hover .icon {            
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+        }
+    }
+
+    span {
+        display: inline-block;
+        background-color: #fff;
+        border-radius: 3px;
+        margin-right: 15px;
+        padding: 3px 8px;
+        color: #444;
+        white-space: nowrap;
+        box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
+    }
+
+    .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FC7E05;
+        width: 45px;
+        height: 45px;
+        border-radius: 40px;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+        transition: 0.2s all;
+
+        img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
+.dpdpa--logo {   
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+
+    img {
+        min-height: 35px;
+        min-width: 35px;
+        max-height: 35px;
+    }
+
+    .dpdpa--logo-delete {
+        margin-left: 10px;
+
+        svg {
+            width: 10px;
+            height: 10px;
+        }
+    }
+}
+
+.dpdpa--logo-box {
+    line-height: 0;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+.appearance_color {
+    display: inline-block;
+    width: 40px;
+    height: 25px;
+    border-radius: 3px;
+    position: relative;
+    top: 7px;
+    margin-right: 10px;
+}
+
+.appearance_color_pick {
+    padding: 0;
+    margin: 0;
+    border: none !important;
+    background: none !important;
+    height: 33px;
+    position: relative;
+    top: 6px;
+}
+
+.pdpa--thailand-pro {
+    color: #fff;
+    font-weight: bold;
+    background: #FC7E05;
+    font-size: 10px;
+    padding: 3px 7px;
+    border-radius: 3px;
+    margin-left: 3px;
+}
+
+.pdpa--reset-cookie {
+    margin-right: 1em !important;
+}
