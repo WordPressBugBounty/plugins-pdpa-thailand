@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PDPA Thailand\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-09 11:13+0000\n"
-"PO-Revision-Date: 2024-10-07 04:14+0000\n"
+"PO-Revision-Date: 2024-10-07 04:13+0000\n"
 "Last-Translator: \n"
 "Language-Team: ไทย\n"
 "Language: th\n"
@@ -582,9 +582,10 @@ msgid "Upgrade 30% Off!"
 msgstr "อัพเกรดทันทีลด 30% !"
 
 #: admin/admin.php:1462
+#, fuzzy
 #| msgid "Upgrade now for 300฿ Off !"
 msgid "Upgrade now for 30% Off !"
-msgstr "ซื้อเลย ! ตอนนี้ลดอีก 30%"
+msgstr "ซื้อเลย ! ตอนนี้ลดอีก 300฿"
 
 #: admin/admin.php:1374
 msgid ""

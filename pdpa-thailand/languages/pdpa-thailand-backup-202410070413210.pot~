@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PDPA Thailand\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-07 04:13+0000\n"
+"POT-Creation-Date: 2024-10-07 04:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -522,12 +522,16 @@ msgstr ""
 msgid "This cookie name is not unique"
 msgstr ""
 
-#: admin/admin.php:131 admin/admin.php:132 admin/admin.php:1680
+#: admin/admin.php:131 admin/admin.php:132
 msgid "Upgrade 30% Off!"
 msgstr ""
 
+#: admin/admin.php:1680
+msgid "Upgrade 300฿ Off!"
+msgstr ""
+
 #: admin/admin.php:1462
-msgid "Upgrade now for 30% Off !"
+msgid "Upgrade now for 300฿ Off !"
 msgstr ""
 
 #: admin/admin.php:1374

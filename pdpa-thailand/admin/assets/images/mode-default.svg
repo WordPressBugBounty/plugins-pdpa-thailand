@@ -1,0 +1,15 @@
+<svg width="209" height="134" viewBox="0 0 209 134" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="209" height="134" rx="4" fill="white"/>
+<rect x="0.5" y="0.5" width="208" height="133" rx="3.5" stroke="black" stroke-opacity="0.4"/>
+<circle cx="11" cy="9" r="3.5" fill="#EE6A5F" stroke="#CE5348"/>
+<circle cx="21" cy="9" r="3.5" fill="#F5BD50" stroke="#D6A244"/>
+<circle cx="31" cy="9" r="3.5" fill="#61C454" stroke="#58A943"/>
+<line y1="17.5" x2="209" y2="17.5" stroke="#979797"/>
+<mask id="path-7-inside-1_108_242" fill="white">
+<path d="M1 116.97H208V129.97C208 131.627 206.657 132.97 205 132.97H4C2.34315 132.97 1 131.627 1 129.97V116.97Z"/>
+</mask>
+<path d="M1 116.97H208V129.97C208 131.627 206.657 132.97 205 132.97H4C2.34315 132.97 1 131.627 1 129.97V116.97Z" fill="#FC7E04"/>
+<path d="M1 115.97H208V117.97H1V115.97ZM208 132.97H1H208ZM1 132.97V116.97V132.97ZM208 116.97V132.97V116.97Z" fill="#FFAD5E" mask="url(#path-7-inside-1_108_242)"/>
+<rect x="163" y="123" width="19" height="6" fill="white"/>
+<rect x="186" y="123" width="19" height="6" fill="white"/>
+</svg>

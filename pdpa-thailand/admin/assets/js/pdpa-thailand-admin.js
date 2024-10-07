@@ -4,18 +4,17 @@
         // Pdpa List
         // $('.pdpa--list').sortable();    
 
-        // Magnific Popup
-        $('.pdpa--info').magnificPopup({
-            type:'inline',
-            midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-        });
-
         // Dynamic edit page
         $('[name="pdpa_thailand_msg[policy_page]"]').change(function(){
             var policy_page_id = $(this).val();
             var policy_edit = $('.policy--page-edit');
             var policy_edit_url = pdpa_thailand.policy_edit_url.split('&');            
             policy_edit.attr('href', policy_edit_url[0] + policy_page_id + '&' + policy_edit_url[1]);
+        });
+
+        $('.pdpa--add-cookie, #dpdpa--upload, .dpdpa--logo-delete').click(function(e){
+            e.preventDefault();
+            return false;
         });
         
         // Refresh cookie
@@ -33,9 +32,32 @@
                 ajaxurl, 
                 data, 
                 function(data) {
-                    console.log(data);
+                    // console.log(data);
                     ele.removeClass('loading');
                     $('[name="pdpa_thailand_settings[cookie_unique_id]"]').val(data);
+            });
+            return false;
+        });
+
+        // Rating
+        $('.dpdpa--rating').click(function(){
+            
+            var data = {
+                'action': 'rating_saved',
+                'nonce' : pdpa_thailand.nonce,
+                'status' : $(this).attr('attr-status'),
+            };
+
+            $.post(
+                ajaxurl, 
+                data, 
+                function(data) {
+                    $('.dpdpa--info').hide();
+
+                    if ( data == 'yes' ) {
+                        // Open new tab
+                        window.open('https://wordpress.org/support/plugin/pdpa-thailand/reviews/?filter=5/#new-post', '_blank');
+                    }
             });
             return false;
         });
