@@ -1313,11 +1313,11 @@ class PDPA_THAILAND_Admin
 	public function pdpa_thailand_freevspro_intro()
 	{
 		$free_vs_pro = array(
-			array(
-				'text' => __('License Price* You will save <b>300฿ off</b> the initial purchase price, and get <b>30% discount</b> when renewing the license.', 'pdpa-thailand'),
-				'free' => '0<span>฿</span>',
-				'pro' => '990<span>฿</span>',
-			),
+			// array(
+			// 	'text' => __('License Price* You will save <b>300฿ off</b> the initial purchase price, and get <b>30% discount</b> when renewing the license.', 'pdpa-thailand'),
+			// 	'free' => '0<span>฿</span>',
+			// 	'pro' => '990<span>฿</span>',
+			// ),
 			array(
 				'text' => __('Capable of setting up using a popup and resetting the cookie ID.', 'pdpa-thailand'),
 				'free' => true,
