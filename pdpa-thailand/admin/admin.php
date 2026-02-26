@@ -4,10 +4,18 @@ if (!defined('ABSPATH')) exit;
 class PDPA_THAILAND_Admin
 {
 	private $options;
+	private $msg;
+	private $cookies;
+	private $appearance;
+	private $js_version;
+	private $css_version;
+	private $temp_path;
+	private $cookie_count;
+	private $multi_site;
 
 	public function __construct()
 	{
-		// $scanner = new PDPA_THAILAND_Scanner();
+		// $scanner = new PDPA_THAILAND_Scanner();		
 
 		// OPTIONS
 		$this->options = get_option('pdpa_thailand_settings');

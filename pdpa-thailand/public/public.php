@@ -2,6 +2,23 @@
 
 class PDPA_THAILAND_Public
 {
+    private $options;
+    private $msg;
+    private $cookies;
+    private $appearance;
+    private $css_version;
+    private $js_version;
+    private $license_status;
+    private $temp_path_url;
+    private $cookie;
+    private $multi_site;
+    private $duration;
+    private $cookie_set;
+    private $choices;
+    private $cookie_count;
+    private $cookie_list;
+    private $cookie_list_js;
+    private $cookie_necessary;
 
     public function __construct()
     {

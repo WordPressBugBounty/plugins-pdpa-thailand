@@ -1,8 +1,8 @@
 === Designil PDPA Thailand ===
 Contributors: aumkub
 Tags: pdpa, thai, cookie, consent, law
-Tested up to: 6.6.1
-Stable tag: 2.0
+Tested up to: 6.9.1
+Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: https://www.designilpdpa.com
 
@@ -131,6 +131,10 @@ Cookie Scanner เป็นเครื่องมือที่ช่วย�
 6. Tab settings - Appearance
 
 == Changelog ==
+= 2.0.1 =
+* รองรับการทำงาน WordPress 6.9.1
+* รองรับการทำงานกับ PHP 8.5.3
+
 = 2.0 =
 * ปรับปรุง UI หลังบ้าน
 
