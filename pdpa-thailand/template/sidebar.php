@@ -21,10 +21,10 @@
             <ul class="dpdpa--popup-list" id="dpdpa--popup-list">
                 <li>
                     <div class="dpdpa--popup-header">
-                        <div class="dpdpa--popup-title"><?php echo $this->cookie_necessary['cookie_necessary_title']; ?></div>
+                        <div class="dpdpa--popup-title"><?php echo pdpa_thailand_kses_title( $this->cookie_necessary['cookie_necessary_title'] ?? '' ); ?></div>
                         <div class="dpdpa--popup-action text"><?php _e('Always Active', 'pdpa-thailand'); ?></div>
                     </div>
-                    <p><?php echo $this->cookie_necessary['cookie_necessary_description']; ?></p>
+                    <p><?php echo pdpa_thailand_kses_description( $this->cookie_necessary['cookie_necessary_description'] ?? '' ); ?></p>
                 </li>
                 <?php
                     if ( $this->cookie_set ) {
@@ -32,15 +32,15 @@
                 ?>
                     <li>
                         <div class="dpdpa--popup-header">
-                            <div class="dpdpa--popup-title"><?php echo stripslashes($val['consent_title']); ?></div>
+                            <div class="dpdpa--popup-title"><?php echo pdpa_thailand_kses_title( stripslashes( $val['consent_title'] ?? '' ) ); ?></div>
                             <div class="dpdpa--popup-action">
                                 <label class="dpdpa--popup-switch">
-                                    <input type="checkbox" name="dpdpa_consent[]" value="<?php echo $key; ?>" checked>
+                                    <input type="checkbox" name="dpdpa_consent[]" value="<?php echo esc_attr( $key ); ?>" checked>
                                     <span class="dpdpa--popup-slider round"></span>
                                 </label>
                             </div>
                         </div>
-                        <p><?php echo stripslashes($val['consent_description']); ?></p>
+                        <p><?php echo pdpa_thailand_kses_description( stripslashes( $val['consent_description'] ?? '' ) ); ?></p>
                     </li>
                 <?php                            
                         }

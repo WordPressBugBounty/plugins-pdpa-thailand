@@ -107,7 +107,6 @@ class PDPA_THAILAND_Admin
 				jQuery('.toplevel_page_pdpa-thailand').find('a[href^="https://designilpdpa.com"]').attr('target', '_blank');
 			});
 		</script>
-		</script>
 	<?php
 	}
 
@@ -116,7 +115,7 @@ class PDPA_THAILAND_Admin
 		add_menu_page(
 			__('PDPA Thailand', 'pdpa-thailand'),
 			__('PDPA Thailand', 'pdpa-thailand'),
-			'update_core',
+			'manage_options',
 			'pdpa-thailand',
 			array($this, 'admin_interface_render'),
 			''
@@ -173,7 +172,7 @@ class PDPA_THAILAND_Admin
 		register_setting(
 			'pdpa_thailand_settings_group',
 			'pdpa_thailand_settings',
-			''
+			array( $this, 'sanitize_pdpa_thailand_settings' )
 		);
 
 		add_settings_section(
@@ -265,7 +264,7 @@ class PDPA_THAILAND_Admin
 		register_setting(
 			'pdpa_thailand_msg_group',
 			'pdpa_thailand_msg',
-			''
+			array( $this, 'sanitize_pdpa_thailand_msg' )
 		);
 
 		add_settings_section(
@@ -536,19 +535,57 @@ class PDPA_THAILAND_Admin
 		 *************************/
 	}
 
-	public function prepare_save_settings($settings)
-	{
-		// Sanitize text field
-		// $settings['text_input'] = sanitize_text_field($settings['text_input']);		
+	public function sanitize_pdpa_thailand_settings( $input ) {
+		$existing = get_option( 'pdpa_thailand_settings', array() );
+		$output   = is_array( $existing ) ? $existing : array();
+
+		if ( ! is_array( $input ) ) {
+			return $output;
+		}
+
+		if ( isset( $input['cookie_unique_id'] ) ) {
+			$output['cookie_unique_id'] = sanitize_text_field( $input['cookie_unique_id'] );
+		}
+
+		$output['is_enable'] = ! empty( $input['is_enable'] ) ? 1 : 0;
+
+		return $output;
+	}
+
+	public function sanitize_pdpa_thailand_msg( $input ) {
+		$existing = get_option( 'pdpa_thailand_msg', array() );
+		$output   = is_array( $existing ) ? $existing : array();
+
+		if ( ! is_array( $input ) ) {
+			return $output;
+		}
+
+		if ( isset( $input['policy_page'] ) ) {
+			$output['policy_page'] = absint( $input['policy_page'] );
+		}
+
+		if ( isset( $input['cookie_consent_message'] ) ) {
+			$output['cookie_consent_message'] = pdpa_thailand_kses_description( $input['cookie_consent_message'] );
+		}
+
+		if ( isset( $input['sidebar_message'] ) ) {
+			$output['sidebar_message'] = pdpa_thailand_kses_description( $input['sidebar_message'] );
+		}
+
+		return $output;
 	}
 
 	// Reset cookie unique ID
 	public function reset_cookie_id()
 	{
-		check_ajax_referer('pdpa_thailand_nonce', 'nonce');
+		check_ajax_referer( 'pdpa_thailand_nonce', 'nonce' );
 
-		$unique_id =  uniqid('pdpa_');
-		echo $unique_id;
+		if ( ! current_user_can( 'manage_options' ) ) {
+			wp_send_json_error( null, 403 );
+		}
+
+		$unique_id = uniqid( 'pdpa_' );
+		echo esc_html( $unique_id );
 
 		wp_die();
 	}
@@ -774,26 +811,27 @@ class PDPA_THAILAND_Admin
 	public function prepare_save_cookies($settings)
 	{
 		$cookie_neccesary = array(
-			'cookie_necessary_title' => sanitize_text_field($_POST['cookie_necessary_title']),
-			'cookie_necessary_description' => sanitize_text_field($_POST['cookie_necessary_description'])
+			'cookie_necessary_title'       => isset( $_POST['cookie_necessary_title'] ) ? pdpa_thailand_kses_title( wp_unslash( $_POST['cookie_necessary_title'] ) ) : '',
+			'cookie_necessary_description' => isset( $_POST['cookie_necessary_description'] ) ? pdpa_thailand_kses_description( wp_unslash( $_POST['cookie_necessary_description'] ) ) : '',
 		);
-		$settings['cookie_necessary'] = serialize($cookie_neccesary);
+		$settings['cookie_necessary'] = serialize( $cookie_neccesary );
 
-		// if ( isset($_POST['gg_analytic_script'] ) )
-		// 	$gg_analytic_script = 1;
-		// else
-		// 	$gg_analytic_script = '';
+		$cookie_name            = isset( $_POST['cookie_name'] ) && is_array( $_POST['cookie_name'] ) ? wp_unslash( $_POST['cookie_name'] ) : array();
+		$consent_title          = isset( $_POST['consent_title'] ) && is_array( $_POST['consent_title'] ) ? wp_unslash( $_POST['consent_title'] ) : array();
+		$consent_description    = isset( $_POST['consent_description'] ) && is_array( $_POST['consent_description'] ) ? wp_unslash( $_POST['consent_description'] ) : array();
+		$gg_analytic_script     = isset( $_POST['gg_analytic_script'] ) && is_array( $_POST['gg_analytic_script'] ) ? wp_unslash( $_POST['gg_analytic_script'] ) : array();
+		$gg_analytic_id         = isset( $_POST['gg_analytic_id'] ) && is_array( $_POST['gg_analytic_id'] ) ? wp_unslash( $_POST['gg_analytic_id'] ) : array();
 
-		// Set cookie 
+		// Set cookie
 		$cookies_list = array(
-			'cookie_name' => $this->pdpa_thailand_recursive_sanitize_text_field($_POST['cookie_name']),
-			'consent_title' => $this->pdpa_thailand_recursive_sanitize_text_field($_POST['consent_title']),
-			'consent_description' => $this->pdpa_thailand_recursive_sanitize_text_field($_POST['consent_description']),
-			'code_in_head' => '',
-			'code_next_body' => '',
-			'code_body_close' => '',
-			'gg_analytic_script' => $this->pdpa_thailand_recursive_sanitize_text_field(isset($_POST['gg_analytic_script']) ? $_POST['gg_analytic_script'] : array()),
-			'gg_analytic_id' => $this->pdpa_thailand_recursive_sanitize_text_field($_POST['gg_analytic_id']),
+			'cookie_name'          => $this->pdpa_thailand_recursive_sanitize_text_field( $cookie_name ),
+			'consent_title'        => is_array( $consent_title ) ? array_map( 'pdpa_thailand_kses_title', $consent_title ) : array(),
+			'consent_description'  => pdpa_thailand_recursive_kses_description( $consent_description ),
+			'code_in_head'         => '',
+			'code_next_body'       => '',
+			'code_body_close'      => '',
+			'gg_analytic_script'   => $this->pdpa_thailand_recursive_sanitize_text_field( $gg_analytic_script ),
+			'gg_analytic_id'       => $this->pdpa_thailand_recursive_sanitize_text_field( $gg_analytic_id ),
 		);
 
 		$settings['cookie_list'] = serialize($cookies_list);
@@ -871,11 +909,16 @@ class PDPA_THAILAND_Admin
 		return $settings;
 	}
 
-	public function pdpa_thailand_recursive_sanitize_text_field($array)
-	{
-		foreach ($array as $key => &$value) {
-			if (is_array($value)) {
-				$array[$key] = $this->pdpa_thailand_recursive_sanitize_text_field($value);
+	public function pdpa_thailand_recursive_sanitize_text_field( $array ) {
+		if ( ! is_array( $array ) ) {
+			return sanitize_text_field( (string) $array );
+		}
+
+		foreach ( $array as $key => &$value ) {
+			if ( is_array( $value ) ) {
+				$value = $this->pdpa_thailand_recursive_sanitize_text_field( $value );
+			} else {
+				$value = sanitize_text_field( (string) $value );
 			}
 		}
 
@@ -905,9 +948,16 @@ class PDPA_THAILAND_Admin
 
 		$cookie_neccesary = array('cookie_necessary_title' => '', 'cookie_necessary_description' => '');
 		if (isset($this->cookies['cookie_necessary'])) {
-			$cookie_neccesary = unserialize($this->cookies['cookie_necessary']);
+			$cookie_neccesary = pdpa_thailand_maybe_unserialize_option( $this->cookies['cookie_necessary'] );
+			$cookie_neccesary = wp_parse_args(
+				$cookie_neccesary,
+				array(
+					'cookie_necessary_title'       => '',
+					'cookie_necessary_description' => '',
+				)
+			);
 
-			if ($cookie_neccesary['cookie_necessary_title'] == '' && $cookie_neccesary['cookie_necessary_description'] == '')
+			if ( $cookie_neccesary['cookie_necessary_title'] == '' && $cookie_neccesary['cookie_necessary_description'] == '' )
 				$cookie_neccesary = array('cookie_necessary_title' => 'คุกกี้ที่จำเป็น', 'cookie_necessary_description' => 'ประเภทของคุกกี้มีความจำเป็นสำหรับการทำงานของเว็บไซต์ เพื่อให้คุณสามารถใช้ได้อย่างเป็นปกติ และเข้าชมเว็บไซต์ คุณไม่สามารถปิดการทำงานของคุกกี้นี้ในระบบเว็บไซต์ของเราได้');
 		} else {
 			$cookie_neccesary = array('cookie_necessary_title' => 'คุกกี้ที่จำเป็น', 'cookie_necessary_description' => 'ประเภทของคุกกี้มีความจำเป็นสำหรับการทำงานของเว็บไซต์ เพื่อให้คุณสามารถใช้ได้อย่างเป็นปกติ และเข้าชมเว็บไซต์ คุณไม่สามารถปิดการทำงานของคุกกี้นี้ในระบบเว็บไซต์ของเราได้');
@@ -983,7 +1033,7 @@ class PDPA_THAILAND_Admin
 					$this->cookie_list_default();
 				} else {
 
-					$cookie_list = unserialize($this->cookies['cookie_list']);
+					$cookie_list = pdpa_thailand_maybe_unserialize_option( $this->cookies['cookie_list'] );
 					$cookie_count = 0;
 
 					if (isset($cookie_list['cookie_name']))
@@ -1037,12 +1087,21 @@ class PDPA_THAILAND_Admin
 	{
 		update_option('pdpa_thailand_css_version', rand());
 
+		$allowed_colors = array( '#006ff4', '#444444' );
+		$color          = isset( $settings['appearance_color'] ) ? strtolower( sanitize_hex_color( $settings['appearance_color'] ) ) : '#006ff4';
+
+		if ( ! $color || ! in_array( $color, $allowed_colors, true ) ) {
+			$color = '#006ff4';
+		}
+
+		$settings['appearance_color'] = $color;
+
 		$container = '';
 		$main_color = '';
 		$dark_mode = '';
 		$posiiton = '';
 
-		if ($settings['appearance_color']) {
+		if ( $settings['appearance_color'] ) {
 			// Link on popup
 			$main_color = '.dpdpa--popup-text a, .dpdpa--popup-text a:visited { color: ' . $settings['appearance_color'] . '; }';
 			$main_color .= '.dpdpa--popup-text a:hover { color: ' . $this->darken_color($settings['appearance_color'], 1.1) . '; }';
@@ -1476,8 +1535,12 @@ class PDPA_THAILAND_Admin
 			return;
 		}
 
-		$default_tab = null;
-		$tab = isset($_GET['tab']) ? $_GET['tab'] : $default_tab;
+		$allowed_tabs = array( '', 'msg', 'cookies', 'appearance', 'freevspro' );
+		$tab          = isset( $_GET['tab'] ) ? sanitize_key( wp_unslash( $_GET['tab'] ) ) : '';
+
+		if ( ! in_array( $tab, $allowed_tabs, true ) ) {
+			$tab = '';
+		}
 
 		// PDPA THAILAND Rating
 		$pdpa_thailand_rating = get_transient('pdpa_thailand_rating');
@@ -1669,7 +1732,7 @@ class PDPA_THAILAND_Admin
 	{
 		return array_merge(
 			array(
-				'settings' => '<a href="' . admin_url('options-general.php?page=pdpa-thailand') . '">' . __('Settings', 'pdpa-thailand') . '</a>',
+				'settings' => '<a href="' . admin_url( 'admin.php?page=pdpa-thailand' ) . '">' . __('Settings', 'pdpa-thailand') . '</a>',
 				'go_pro' => '<a href="https://designilpdpa.com/checkout?edd_action=add_to_cart&download_id=29&edd_options%5Bprice_id%5D=1&discount=UPGRADE" target="_blank">' . __('Upgrade 30% Off!', 'pdpa-thailand') . '</a>'
 			),
 			$links
@@ -1864,10 +1927,18 @@ class PDPA_THAILAND_Admin
 	// Rating saved
 	public function rating_saved()
 	{
+		check_ajax_referer( 'pdpa_thailand_nonce', 'nonce' );
 
-		check_ajax_referer('pdpa_thailand_nonce', 'nonce');
+		if ( ! current_user_can( 'manage_options' ) ) {
+			wp_send_json_error( null, 403 );
+		}
 
-		$status = sanitize_text_field($_POST['status']);
+		$status = isset( $_POST['status'] ) ? sanitize_key( wp_unslash( $_POST['status'] ) ) : '';
+
+		if ( ! in_array( $status, array( 'yes', 'no', 'later' ), true ) ) {
+			wp_die( -1, 400 );
+		}
+
 		// Save if yes or no forever if later have and expired transient
 		if ($status == 'yes') {
 			set_transient('pdpa_thailand_rating', $status, 60 * 60 * 24 * 365);
@@ -1877,8 +1948,8 @@ class PDPA_THAILAND_Admin
 			set_transient('pdpa_thailand_rating', $status, 60 * 60 * 24);
 		}
 
-		echo $status;
+		echo esc_html( $status );
 
-		die();
+		wp_die();
 	}
 }
